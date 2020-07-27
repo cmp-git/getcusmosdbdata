@@ -8,7 +8,7 @@
       "methods": [
         "get"
       ],
-      "route": "newEmployeeContainer/{id}"
+      "route": "records/{id}"
     },
     {
       "name": "$return",
@@ -17,10 +17,10 @@
     },
     {
       "type": "cosmosDB",
-      "name": "employeeDocument",
-      "databaseName": "cmptestdb",
-      "collectionName": "newEmployeeContainer",
-      "connectionStringSetting": "cmp-cosmosdb-crud_DOCUMENTDB",
+      "name": "recordDocument",
+      "databaseName": "recorddb",
+      "collectionName": "records",
+      "connectionStringSetting": "az-db-demo334272_DOCUMENTDB",
       "direction": "in",
       "sqlQuery": "select  * from c where c.id={id}"
     }
