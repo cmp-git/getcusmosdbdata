@@ -20,7 +20,7 @@
       "name": "recordDocument",
       "databaseName": "recorddb",
       "collectionName": "records",
-      "connectionStringSetting": "cmp-cosmosdb-demo_DOCUMENTDB",
+      "connectionStringSetting": "cf-cmp-cosmosdb_DOCUMENTDB",
       "direction": "in",
       "sqlQuery": "select  * from c where c.id={id}"
     }
