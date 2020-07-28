@@ -15,9 +15,9 @@ public class Employee
   public string mobileno { get; set; } 
 }
 
-public static async Task<IActionResult> Run(HttpRequest req, IEnumerable<Employee> employeeDocument, ILogger log)
+public static async Task<IActionResult> Run(HttpRequest req, IEnumerable<Employee> recordDocument, ILogger log)
 {
-  var employees = (List<Employee>) employeeDocument;
+  var employees = (List<Employee>) recordDocument;
   return new OkObjectResult(employees);
 }
 
